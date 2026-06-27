@@ -1,0 +1,3 @@
+﻿candidate_name,order,seasonal_order,successful_cluster_count,converged_cluster_count,total_warning_count,total_fit_seconds,total_negative_predictions,Macro_RMSE,Macro_MAE
+SARIMA_A,"(1, 0, 0)","(1, 1, 0, 24)",3,3,0,18.377273799997056,107,561.6836046437288,328.9837650854491
+SARIMA_B,"(1, 0, 1)","(1, 1, 0, 24)",3,3,0,25.675217799995153,87,526.6534448923924,313.1122074814144

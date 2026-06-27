@@ -1,0 +1,56 @@
+project:
+  name: seoul-bike-demand-forecasting
+  title: 서울시 공공자전거 GPS 군집 기반 1시간 수요 예측
+  target: rental_count
+  forecast_horizon_hours: 1
+  time_frequency: hourly
+  spatial_unit: cluster
+
+data:
+  bike_usage_dir: data/raw/bike_usage
+  station_dir: data/raw/station
+  station_history_dir: data/raw/station_history
+  processed_dir: data/processed
+  outputs_dir: outputs
+
+period:
+  start: "2023-01-01"
+  end: "2024-12-31"
+
+split:
+  train_start: "2023-01-01 00:00:00"
+  train_end: "2024-06-30 23:00:00"
+  validation_start: "2024-07-01 00:00:00"
+  validation_end: "2024-09-30 23:00:00"
+  test_start: "2024-10-01 00:00:00"
+  test_end: "2024-12-31 23:00:00"
+
+clustering:
+  n_clusters: 3
+  random_state: 42
+
+baseline:
+  daily_lag_hours: 24
+  weekly_lag_hours: 168
+
+sarima:
+  order: [1, 0, 1]
+  seasonal_order: [1, 1, 0, 24]
+  seasonal_period: 24
+  max_iterations: 50
+
+lightgbm:
+  best_iteration: 921
+  random_state: 42
+  features:
+    - cluster_id
+    - hour
+    - weekday
+    - month
+    - is_weekend
+    - lag_1
+    - lag_2
+    - lag_3
+    - lag_24
+    - lag_48
+    - lag_168

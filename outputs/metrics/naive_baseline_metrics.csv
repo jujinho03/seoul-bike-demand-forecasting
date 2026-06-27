@@ -1,0 +1,9 @@
+﻿split,model,cluster_label,observation_count,RMSE,MAE
+validation,Daily Naive (lag_24),cluster_0,2208,1514.0470530052123,852.5846920289855
+validation,Daily Naive (lag_24),cluster_1,2208,720.0326878399139,431.161231884058
+validation,Daily Naive (lag_24),cluster_2,2208,822.554641978182,481.2069746376812
+validation,Daily Naive (lag_24),Macro Average,6624,1018.8781276077694,588.3176328502416
+validation,Weekly Naive (lag_168),cluster_0,2208,1558.6653995962542,861.9610507246376
+validation,Weekly Naive (lag_168),cluster_1,2208,763.6505292918229,455.1046195652174
+validation,Weekly Naive (lag_168),cluster_2,2208,855.0679622747514,495.8451086956522
+validation,Weekly Naive (lag_168),Macro Average,6624,1059.127963720943,604.3035929951691

@@ -1,0 +1,5 @@
+﻿split,model,cluster_label,observation_count,RMSE,MAE
+validation,LightGBM,cluster_0,2208,395.8942698823452,228.42625106510235
+validation,LightGBM,cluster_1,2208,194.22574116792143,117.26912209244865
+validation,LightGBM,cluster_2,2208,218.65978440391132,126.3643846861576
+validation,LightGBM,Macro Average,6624,269.59326515139264,157.35325261456953

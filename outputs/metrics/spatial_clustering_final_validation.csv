@@ -1,0 +1,88 @@
+﻿validation_item,status,passed,actual,expected,detail
+필수 산출물 존재: 대여소 군집 매핑,PASS,True,True,True,data\processed\station_cluster_map.csv
+필수 산출물 파일 크기: 대여소 군집 매핑,PASS,True,641687,0보다 큼,data\processed\station_cluster_map.csv
+필수 산출물 존재: 군집별 시간대 수요,PASS,True,True,True,data\processed\cluster_hourly_demand.csv
+필수 산출물 파일 크기: 군집별 시간대 수요,PASS,True,2397710,0보다 큼,data\processed\cluster_hourly_demand.csv
+필수 산출물 존재: 군집 수 후보 평가,PASS,True,True,True,outputs\metrics\spatial_cluster_candidate_metrics.csv
+필수 산출물 파일 크기: 군집 수 후보 평가,PASS,True,1861,0보다 큼,outputs\metrics\spatial_cluster_candidate_metrics.csv
+필수 산출물 존재: 군집별 요약,PASS,True,True,True,outputs\metrics\spatial_cluster_summary.csv
+필수 산출물 파일 크기: 군집별 요약,PASS,True,1270,0보다 큼,outputs\metrics\spatial_cluster_summary.csv
+필수 산출물 존재: 군집별 자치구 구성,PASS,True,True,True,outputs\metrics\spatial_cluster_district_composition.csv
+필수 산출물 파일 크기: 군집별 자치구 구성,PASS,True,3139,0보다 큼,outputs\metrics\spatial_cluster_district_composition.csv
+필수 산출물 존재: 군집 중심 좌표,PASS,True,True,True,outputs\metrics\spatial_cluster_centroids.csv
+필수 산출물 파일 크기: 군집 중심 좌표,PASS,True,363,0보다 큼,outputs\metrics\spatial_cluster_centroids.csv
+필수 산출물 존재: 월별 군집 수요 집계 요약,PASS,True,True,True,outputs\metrics\cluster_hourly_demand_summary.csv
+필수 산출물 파일 크기: 월별 군집 수요 집계 요약,PASS,True,1806,0보다 큼,outputs\metrics\cluster_hourly_demand_summary.csv
+필수 산출물 존재: 시계열 완전성,PASS,True,True,True,outputs\metrics\cluster_time_series_completeness.csv
+필수 산출물 파일 크기: 시계열 완전성,PASS,True,395,0보다 큼,outputs\metrics\cluster_time_series_completeness.csv
+필수 산출물 존재: 군집 수요 기술통계,PASS,True,True,True,outputs\metrics\cluster_demand_descriptive_stats.csv
+필수 산출물 파일 크기: 군집 수요 기술통계,PASS,True,615,0보다 큼,outputs\metrics\cluster_demand_descriptive_stats.csv
+필수 산출물 존재: 시간대별 수요 프로파일,PASS,True,True,True,outputs\metrics\cluster_hourly_profile.csv
+필수 산출물 파일 크기: 시간대별 수요 프로파일,PASS,True,4915,0보다 큼,outputs\metrics\cluster_hourly_profile.csv
+필수 산출물 존재: 요일별 수요 프로파일,PASS,True,True,True,outputs\metrics\cluster_weekday_profile.csv
+필수 산출물 파일 크기: 요일별 수요 프로파일,PASS,True,1333,0보다 큼,outputs\metrics\cluster_weekday_profile.csv
+필수 산출물 존재: 월별 수요 프로파일,PASS,True,True,True,outputs\metrics\cluster_monthly_profile.csv
+필수 산출물 파일 크기: 월별 수요 프로파일,PASS,True,4631,0보다 큼,outputs\metrics\cluster_monthly_profile.csv
+필수 산출물 존재: 일별 군집 수요,PASS,True,True,True,outputs\metrics\cluster_daily_demand.csv
+필수 산출물 파일 크기: 일별 군집 수요,PASS,True,65743,0보다 큼,outputs\metrics\cluster_daily_demand.csv
+필수 산출물 존재: 시차 자기상관,PASS,True,True,True,outputs\metrics\cluster_autocorrelation_summary.csv
+필수 산출물 파일 크기: 시차 자기상관,PASS,True,274,0보다 큼,outputs\metrics\cluster_autocorrelation_summary.csv
+필수 산출물 존재: 좌표 이동 군집 안정성 상세,PASS,True,True,True,outputs\metrics\station_coordinate_cluster_stability.csv
+필수 산출물 파일 크기: 좌표 이동 군집 안정성 상세,PASS,True,15488,0보다 큼,outputs\metrics\station_coordinate_cluster_stability.csv
+필수 산출물 존재: 좌표 이동 군집 안정성 요약,PASS,True,True,True,outputs\metrics\station_coordinate_cluster_stability_summary.csv
+필수 산출물 파일 크기: 좌표 이동 군집 안정성 요약,PASS,True,656,0보다 큼,outputs\metrics\station_coordinate_cluster_stability_summary.csv
+필수 산출물 존재: 좌표 이동 군집 변경 대여소,PASS,True,True,True,outputs\metrics\station_coordinate_cluster_changed_stations.csv
+필수 산출물 파일 크기: 좌표 이동 군집 변경 대여소,PASS,True,893,0보다 큼,outputs\metrics\station_coordinate_cluster_changed_stations.csv
+필수 산출물 존재: 군집 수별 Inertia 그래프,PASS,True,True,True,outputs\figures\spatial_cluster_inertia_by_k.png
+필수 산출물 파일 크기: 군집 수별 Inertia 그래프,PASS,True,67211,0보다 큼,outputs\figures\spatial_cluster_inertia_by_k.png
+필수 산출물 존재: 군집 수별 Silhouette 그래프,PASS,True,True,True,outputs\figures\spatial_cluster_silhouette_by_k.png
+필수 산출물 파일 크기: 군집 수별 Silhouette 그래프,PASS,True,74392,0보다 큼,outputs\figures\spatial_cluster_silhouette_by_k.png
+필수 산출물 존재: 최종 공간 군집 지도,PASS,True,True,True,outputs\figures\spatial_station_clusters_k3.png
+필수 산출물 파일 크기: 최종 공간 군집 지도,PASS,True,1087473,0보다 큼,outputs\figures\spatial_station_clusters_k3.png
+필수 산출물 존재: 군집별 일별 수요 그래프,PASS,True,True,True,outputs\figures\cluster_daily_demand_timeseries.png
+필수 산출물 파일 크기: 군집별 일별 수요 그래프,PASS,True,757877,0보다 큼,outputs\figures\cluster_daily_demand_timeseries.png
+필수 산출물 존재: 군집별 시간대 수요 그래프,PASS,True,True,True,outputs\figures\cluster_hourly_demand_profile.png
+필수 산출물 파일 크기: 군집별 시간대 수요 그래프,PASS,True,193447,0보다 큼,outputs\figures\cluster_hourly_demand_profile.png
+필수 산출물 존재: 군집별 요일 수요 그래프,PASS,True,True,True,outputs\figures\cluster_weekday_demand_profile.png
+필수 산출물 파일 크기: 군집별 요일 수요 그래프,PASS,True,124873,0보다 큼,outputs\figures\cluster_weekday_demand_profile.png
+필수 산출물 존재: 군집별 월간 수요 그래프,PASS,True,True,True,outputs\figures\cluster_monthly_mean_demand.png
+필수 산출물 파일 크기: 군집별 월간 수요 그래프,PASS,True,238161,0보다 큼,outputs\figures\cluster_monthly_mean_demand.png
+필수 산출물 존재: 좌표 이동 안정성 그래프,PASS,True,True,True,outputs\figures\station_coordinate_movement_cluster_margin.png
+필수 산출물 파일 크기: 좌표 이동 안정성 그래프,PASS,True,116584,0보다 큼,outputs\figures\station_coordinate_movement_cluster_margin.png
+군집 수 후보 목록,PASS,True,"[2, 3, 4, 5, 6, 7, 8, 9, 10]","[2, 3, 4, 5, 6, 7, 8, 9, 10]",
+Silhouette Score 기준 최적 K,PASS,True,3,3,
+대여소 군집 매핑 행 수,PASS,True,2847,2847,
+대여소 군집 매핑 고유 ID 수,PASS,True,2847,2847,
+대여소 군집 매핑 ID 중복,PASS,True,0,0,
+대여소 군집 매핑 핵심 변수 결측,PASS,True,0,0,
+대여소 군집 번호 집합,PASS,True,"[np.int64(0), np.int64(1), np.int64(2)]","[0, 1, 2]",
+대여소 군집 매핑 이용건수,PASS,True,88708877,88708877,
+군집 중심까지 음수 거리,PASS,True,0,0,
+군집 요약 행 수,PASS,True,3,3,
+군집별 대여소 수 합계,PASS,True,2847,2847,
+군집별 이용건수 합계,PASS,True,88708877,88708877,
+군집별 대여소 비중 합계,PASS,True,100.00000000000001,100.0,
+군집별 수요 비중 합계,PASS,True,100.0,100.0,
+군집 중심 개수,PASS,True,3,3,
+군집 중심 X좌표 서쪽→동쪽 정렬,PASS,True,"[-8222.282, 3472.652, 8069.309]",오름차순,
+군집 중심 경도 서쪽→동쪽 정렬,PASS,True,"[126.898904, 127.03156, 127.083699]",오름차순,
+군집별 시간대 수요 행 수,PASS,True,52632,52632,
+군집별 시간대 수요 중복 키,PASS,True,0,0,
+군집별 시간대 수요 핵심 변수 결측,PASS,True,0,0,
+군집별 시간대 수요 음수 이용건수,PASS,True,0,0,
+군집별 시간대 수요 비정수 이용건수,PASS,True,0,0,
+군집별 시간대 수요 군집 번호,PASS,True,"[np.int64(0), np.int64(1), np.int64(2)]","[0, 1, 2]",
+군집별 시간대 수요 전체 이용건수,PASS,True,88708877,88708877,
+군집별 시간대 수요 시작 시각,PASS,True,2023-01-01 00:00:00,2023-01-01 00:00:00,
+군집별 시간대 수요 종료 시각,PASS,True,2024-12-31 23:00:00,2024-12-31 23:00:00,
+군집별 시간대 수요 관측월 수,PASS,True,24,24,
+군집별 관측 시간 수,PASS,True,"{np.int64(0): 17544, np.int64(1): 17544, np.int64(2): 17544}","{0: 17544, 1: 17544, 2: 17544}",
+월별 군집 수요 집계 기록 수,PASS,True,24,24,
+월별 군집 수요 집계 전후 수요 보존,PASS,True,True,True,
+군집별 시간축 완전성,PASS,True,"[True, True, True]","[True, True, True]",
+10m 이상 좌표 이동 대여소 수,PASS,True,38,38,
+좌표 이동으로 군집이 변경된 대여소,PASS,True,0,0,
+최신 좌표와 현재 군집 매핑 불일치,PASS,True,0,0,
+좌표 이동 군집 안정성 판정,PASS,True,STABLE,STABLE,
+군집 변경 대여소 파일 행 수,PASS,True,0,0,
+최소 최근접·차순위 중심 거리 차이,PASS,True,183.8156391081411,0보다 큼,군집 경계까지의 수직거리가 아니라 최근접 중심과 차순위 중심까지의 거리 차이
