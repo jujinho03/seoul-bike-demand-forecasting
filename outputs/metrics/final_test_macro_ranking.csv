@@ -1,5 +1,6 @@
 ﻿split,model,cluster_label,observation_count,RMSE,MAE
 test,LightGBM,Macro Average,6624,190.72425030589548,113.0539125500987
 test,SARIMA,Macro Average,6624,460.62939861399735,260.0151124245847
+test,Hourly Naive (lag_1),Macro Average,6624,725.5707778184643,456.7314311594203
 test,Weekly Naive (lag_168),Macro Average,6624,776.5245646359186,427.04785628019323
 test,Daily Naive (lag_24),Macro Average,6624,865.434648964093,464.011020531401

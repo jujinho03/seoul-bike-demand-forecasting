@@ -1,4 +1,4 @@
 ﻿cluster_label,converged,warning_count,fit_seconds,negative_prediction_count
-cluster_0,True,0,13.017151400003058,27
-cluster_1,True,0,12.25421049999568,18
-cluster_2,True,0,10.902704199994332,22
+cluster_0,True,0,12.88301489999867,27
+cluster_1,True,0,12.352014100004453,18
+cluster_2,True,0,10.71930109999812,22
