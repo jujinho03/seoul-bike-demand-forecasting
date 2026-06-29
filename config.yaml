@@ -1,6 +1,8 @@
 project:
   name: seoul-bike-demand-forecasting
   title: 서울시 공공자전거 GPS 군집 기반 1시간 수요 예측
+  author: "주진호"
+  portfolio_id: "02"
   target: rental_count
   forecast_horizon_hours: 1
   time_frequency: hourly

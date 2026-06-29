@@ -1,118 +1,47 @@
-# --------------------------------------------------
-
 # Python
-
-# --------------------------------------------------
-
-**pycache**/
+__pycache__/
 *.py[cod]
 *.pyd
 *.so
-
-# --------------------------------------------------
-
-# Virtual environments
-
-# --------------------------------------------------
-
 .venv/
 venv/
 env/
 ENV/
 
-# --------------------------------------------------
-
-# Jupyter Notebook
-
-# --------------------------------------------------
-
+# Jupyter
 .ipynb_checkpoints/
 
-# --------------------------------------------------
-
-# Editors and IDEs
-
-# --------------------------------------------------
-
+# Editors and operating system files
 .vscode/
 .idea/
-
-# --------------------------------------------------
-
-# Environment variables and secrets
-
-# --------------------------------------------------
-
-.env
-.env.*
-*.key
-*.pem
-
-# --------------------------------------------------
-
-# Operating system files
-
-# --------------------------------------------------
-
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# --------------------------------------------------
-
-# Logs and temporary files
-
-# --------------------------------------------------
-
+# Local secrets, logs and temporary files
+.env
+.env.*
+*.key
+*.pem
 *.log
 *.tmp
 *.temp
 ~$*
 
-# --------------------------------------------------
-
-# Raw data
-
-# Large source files remain local and are excluded
-
-# from the public GitHub repository.
-
-# --------------------------------------------------
-
+# Raw datasets stay local; keep directory placeholders only
 data/raw/**
-
 !data/raw/
 !data/raw/.gitkeep
 
-# --------------------------------------------------
-
-# Processed data
-
-# Keep only the two final portfolio datasets and
-
-# their documentation.
-
-# --------------------------------------------------
-
+# Keep only the two final processed portfolio datasets
 data/processed/**
-
 !data/processed/
 !data/processed/README.md
 !data/processed/station_cluster_map.csv
 !data/processed/cluster_hourly_demand.csv
 
-# --------------------------------------------------
-
-# Figures
-
-# Notebook execution may regenerate many intermediate
-
-# figures. Keep only the ten portfolio figures below.
-
-# --------------------------------------------------
-
+# Keep only portfolio figures
 outputs/figures/**
-
 !outputs/figures/
 !outputs/figures/final_test_model_comparison_last_week.png
 !outputs/figures/integrated_hourly_demand_by_cluster.png
@@ -125,16 +54,8 @@ outputs/figures/**
 !outputs/figures/spatial_cluster_silhouette_by_k.png
 !outputs/figures/spatial_station_clusters_k3.png
 
-# --------------------------------------------------
-
-# Metrics
-
-# Keep only the fourteen final portfolio tables below.
-
-# --------------------------------------------------
-
+# Keep only final portfolio metrics
 outputs/metrics/**
-
 !outputs/metrics/
 !outputs/metrics/final_model_config.csv
 !outputs/metrics/final_sarima_fit_summary.csv
@@ -151,24 +72,10 @@ outputs/metrics/**
 !outputs/metrics/spatial_clustering_final_validation.csv
 !outputs/metrics/time_split_summary.csv
 
-# --------------------------------------------------
-
-# Detailed reports, trained models and predictions
-
-# These are reproducible by running the notebooks.
-
-# --------------------------------------------------
-
+# Reproducible large or intermediate outputs
 outputs/reports/**
 outputs/models/**
 outputs/predictions/**
-
-# --------------------------------------------------
-
-# Serialized model files
-
-# --------------------------------------------------
-
 *.pkl
 *.pickle
 *.joblib
