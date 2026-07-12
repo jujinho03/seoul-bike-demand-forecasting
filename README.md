@@ -1,10 +1,22 @@
 # 서울시 공공자전거 GPS 군집 기반 수요 예측
 
-> 대여소를 공간 군집화하고 시간 순서를 보존해 다음 1시간의 군집별 대여 수요를 예측한 시계열 프로젝트
+![Python](https://img.shields.io/badge/Python-Data%20Analysis-3776AB?style=flat-square&logo=python&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-Data%20Processing-150458?style=flat-square&logo=pandas&logoColor=white)
+![LightGBM](https://img.shields.io/badge/LightGBM-Forecasting-2E8B57?style=flat-square)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
-2023년 1월부터 2024년 12월까지의 서울시 공공자전거 이용정보를 활용해 GPS 기반 공간 군집을 구성하고, 각 군집의 시간당 대여건수를 예측했습니다. 단순한 최종 성능만 제시하지 않고 대여소 ID·GPS 품질, 시간 기반 분할, 시차변수의 누출 방지, 단순 기준모델 대비 개선 폭을 함께 검증했습니다.
+**바로가기:** [분석 노트북](notebooks/) · [분석 보고서](docs/findings.md) · [프로젝트 설명](docs/portfolio_description.md) · [주요 산출물](outputs/)
 
-Hourly Naive, Daily Naive, Weekly Naive, SARIMA, LightGBM을 동일한 2024년 4분기 테스트 기간에서 비교했으며, 예측 성능은 세 군집을 같은 비중으로 평균한 Macro RMSE와 Macro MAE로 평가했습니다.
+> **문제** — 대여소별 차이를 유지하면서 다음 1시간의 지역별 공공자전거 수요를 예측했습니다.<br>
+> **한 일** — 88,708,877건을 검수하고 GPS로 3개 공간 군집을 만든 뒤 시간 순서를 지켜 5개 모델을 비교했습니다.<br>
+> **핵심 결과** — LightGBM Macro RMSE 190.724, SARIMA 대비 58.595% 개선을 확인했습니다.<br>
+> **차별점** — 대여소 ID·GPS 품질, 시차변수 누출, 단순 기준모델을 함께 검증했습니다.
+
+## 이 프로젝트로 보여주는 역량
+
+- 대용량 공공데이터의 품질 검수와 대여소 ID·GPS 표준화
+- 공간 군집화와 미래 정보 누출을 막은 시계열 검증 설계
+- 단순 기준모델부터 머신러닝까지의 비교와 운영 관점 해석
 
 ## 1. 핵심 결과
 
@@ -111,7 +123,7 @@ Gain 기반 중요도는 `lag_1` 65.741%, `lag_168` 18.672%, `lag_24` 7.187%, `h
 
 다만 현재 평가는 예측 오차에 한정됩니다. 실제 재배치에 적용하려면 거치대 여유량, 자전거 재고, 이동 비용, 결품·과잉 비용을 함께 반영한 운영 KPI로 별도 검증해야 합니다.
 
-## 8. 저장소 구조
+## 8. 프로젝트 구조
 
 ```text
 .
@@ -168,7 +180,7 @@ JupyterLab에서 `01_data_quality_preprocessing.ipynb` → `02_spatial_clusterin
 
 재현 기준 환경은 Python 3.13.5, `random_state=42`, `requirements.txt`의 패키지 버전과 프로젝트 상대경로입니다.
 
-## 10. 한계
+## 10. 한계와 개선 방향
 
 - 공간 단위가 개별 대여소가 아닌 3개 군집으로 단순화되어 있습니다.
 - 테스트 기간은 2024년 4분기로 한정되어 있습니다.
@@ -178,3 +190,7 @@ JupyterLab에서 `01_data_quality_preprocessing.ipynb` → `02_spatial_clusterin
 - Gain 기반 변수 중요도는 인과효과를 의미하지 않습니다.
 
 자세한 분석 결과와 해석 주의사항은 [`docs/findings.md`](docs/findings.md), 산출물 별 설명은 [`outputs/README.md`](outputs/README.md)에서 확인할 수 있습니다.
+
+## 11. 결론
+
+대용량 원천 데이터를 검수하고 GPS 공간 군집과 시간 순서 기반 검증을 연결했습니다. LightGBM은 동일한 테스트 기간에서 단순 기준모델과 SARIMA보다 낮은 오차를 보였지만, 결과를 3개 군집의 재배치 우선순위 보조 신호로 한정했습니다. 실제 운영 적용에는 자전거 재고·거치대 여유량·이동 비용을 포함한 추가 검증이 필요합니다.
