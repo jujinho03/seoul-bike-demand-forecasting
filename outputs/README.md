@@ -172,7 +172,7 @@ lag_168
 | ------------------------------------ | -------------------------------------- |
 | `final_model_config.csv`             | 검증 단계에서 확정한 최종 SARIMA·LightGBM 설정      |
 | `final_sarima_fit_summary.csv`       | 군집별 최종 SARIMA 수렴 상태, 학습 시간과 음수 예측값 수   |
-| `final_test_metrics.csv`             | 네 모델의 군집별·Macro 테스트 RMSE와 MAE          |
+| `final_test_metrics.csv`             | 다섯 모델의 군집별·Macro 테스트 RMSE와 MAE         |
 | `final_test_macro_ranking.csv`       | 세 군집의 Macro Average를 기준으로 정렬한 최종 모델 순위 |
 | `final_test_improvement_summary.csv` | LightGBM의 SARIMA 및 나이브 기준모델 대비 성능 개선율  |
 
@@ -186,8 +186,9 @@ lag_168
 | -: | ------------ | ---------: | --------: |
 |  1 | LightGBM     |    190.724 |   113.054 |
 |  2 | SARIMA       |    460.629 |   260.015 |
-|  3 | Weekly Naive |    776.525 |   427.048 |
-|  4 | Daily Naive  |    865.435 |   464.011 |
+|  3 | Hourly Naive |    725.571 |   456.731 |
+|  4 | Weekly Naive |    776.525 |   427.048 |
+|  5 | Daily Naive  |    865.435 |   464.011 |
 
 LightGBM은 SARIMA와 비교하여 다음과 같이 오차를 줄였습니다.
 
