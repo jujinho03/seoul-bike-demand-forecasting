@@ -65,6 +65,7 @@ outputs/metrics/**
 !outputs/metrics/lightgbm_feature_importance.csv
 !outputs/metrics/lightgbm_validation_metrics.csv
 !outputs/metrics/naive_baseline_metrics.csv
+!outputs/metrics/portfolio_data_flow_summary.csv
 !outputs/metrics/priority_2023_09_07_context.csv
 !outputs/metrics/sarima_candidate_macro_summary.csv
 !outputs/metrics/spatial_cluster_candidate_metrics.csv

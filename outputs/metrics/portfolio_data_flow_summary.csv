@@ -1,0 +1,14 @@
+metric,value,unit,source
+analysis_period,2023-01-01 ~ 2024-12-31,period,notebooks/01_data_quality_preprocessing.ipynb
+raw_input_row_count,79670647,rows,notebooks/01_data_quality_preprocessing.ipynb
+aggregated_station_hour_rows,26145337,rows,notebooks/01_data_quality_preprocessing.ipynb
+total_aggregated_rental_count,88750388,rentals,notebooks/01_data_quality_preprocessing.ipynb
+spatial_target_station_count,2847,stations,outputs/metrics/spatial_clustering_final_validation.csv
+excluded_station_count,18,stations,notebooks/01_data_quality_preprocessing.ipynb
+spatial_target_rental_count,88708877,rentals,outputs/metrics/spatial_clustering_final_validation.csv
+excluded_rental_count,41511,rentals,notebooks/01_data_quality_preprocessing.ipynb
+spatial_coverage_percent,99.9532272467361,percent,notebooks/01_data_quality_preprocessing.ipynb
+cluster_count,3,clusters,outputs/metrics/spatial_clustering_final_validation.csv
+hours_per_cluster,17544,hours,outputs/metrics/spatial_clustering_final_validation.csv
+modeling_row_count,52632,rows,outputs/metrics/spatial_clustering_final_validation.csv
+missing_hour_count,0,hours,outputs/metrics/spatial_clustering_final_validation.csv
